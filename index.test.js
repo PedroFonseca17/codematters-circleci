@@ -14,4 +14,5 @@ test('Multiply 2 and 2 a return 4', () => {
 
 test('divides 4 per 2 and returns 2', () => {
   expect(divide(4, 2)).toBe(2)
+  //comment
 })
