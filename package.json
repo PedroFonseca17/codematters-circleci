@@ -1,0 +1,25 @@
+{
+  "name": "codematters-circleci",
+  "version": "1.0.0",
+  "description": "codematters circleci",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PedroFonseca17/codematters-circleci.git"
+  },
+  "keywords": [
+    "codematters"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PedroFonseca17/codematters-circleci/issues"
+  },
+  "homepage": "https://github.com/PedroFonseca17/codematters-circleci#readme",
+  "devDependencies": {
+    "jest": "^24.9.0"
+  }
+}
