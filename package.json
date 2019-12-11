@@ -4,7 +4,7 @@
   "description": "codematters circleci",
   "main": "index.js",
   "scripts": {
-    "test": "jest && codecov"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
