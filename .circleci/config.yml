@@ -31,7 +31,6 @@ jobs:
           command: |
             yarn install && yarn test
       - codecov/upload:
-          file: './coverage'
           token: a7a5df63-842c-4578-8977-57558e0ae2a3
   Now-Complete:
     docker:
