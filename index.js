@@ -14,10 +14,6 @@ function divide(a, b) {
   return a / b
 }
 
-function untested(a, b) {
-  return a
-}
-
 module.exports = {
   sum,
   sub,
