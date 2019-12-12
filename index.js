@@ -23,7 +23,7 @@ function untested2(a, b) {
 function untested4(a, b) {
   return a
 }
-function untested4(a, b) {
+function untested45(a, b) {
   return a
 }
 
