@@ -14,6 +14,19 @@ function divide(a, b) {
   return a / b
 }
 
+function untested1(a, b) {
+  return a
+}
+function untested2(a, b) {
+  return a
+}
+function untested4(a, b) {
+  return a
+}
+function untested4(a, b) {
+  return a
+}
+
 module.exports = {
   sum,
   sub,
