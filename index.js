@@ -15,7 +15,11 @@ function divide(a, b) {
 }
 
 function untested1(a, b) {
+  if( a === 1) {
   return a
+  } else {
+    return b
+  }
 }
 function untested2(a, b) {
   return a
