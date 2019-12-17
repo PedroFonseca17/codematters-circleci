@@ -7,9 +7,8 @@ coverage:
   range: "70...100"
   notify:
     slack:
-      default:
-        url: "https://hooks.slack.com/services/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"
-        threshold: 1%
+      url: "https://hooks.slack.com/services/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"
+      threshold: 1%
   status:
     project: yes
     patch: yes
