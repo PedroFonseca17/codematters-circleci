@@ -30,7 +30,6 @@ function untested4(a, b) {
 function untested5(a, b) {
   return a
 }
-
 module.exports = {
   sum,
   sub,
