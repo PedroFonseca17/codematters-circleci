@@ -32,4 +32,5 @@ module.exports = {
   sub,
   multiply,
   divide,
+  untested1
 }

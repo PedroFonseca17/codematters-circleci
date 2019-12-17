@@ -1,4 +1,4 @@
-const {sum, sub, multiply, divide} = require('./index')
+const {sum, sub, multiply, divide, untested1} = require('./index')
 
 test('Adds 1+2 and expects 3', () => {
   expect(sum(1,2)).toBe(3)
@@ -14,4 +14,8 @@ test('Multiply 2 and 2 a return 4', () => {
 
 test('divides 4 per 2 and returns 2', () => {
   expect(divide(4, 2)).toBe(2)
+})
+
+test('untested test', () => {
+  expect(untested1(1, 2)).toBe(1)
 })
