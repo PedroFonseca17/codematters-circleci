@@ -25,6 +25,8 @@
   "jest": {
     "coverageDirectory": "./coverage/",
     "collectCoverage": true
+  },
+  "dependencies": {
+    "codecov": "^3.6.1"
   }
-  
 }
