@@ -14,6 +14,10 @@ function divide(a, b) {
   return a / b
 }
 
+function test() {
+  return true
+}
+
 module.exports = {
   sum,
   sub,
