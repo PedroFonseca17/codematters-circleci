@@ -11,7 +11,6 @@ jobs:
         node-version: [ 12.x ]
     steps:
     - run: ls -la
-    - run: File system
 
   build:
 
