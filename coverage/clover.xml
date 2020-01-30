@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1576160526182" clover="3.2.0">
-  <project timestamp="1576160526183" name="All files">
+<coverage generated="1580386281695" clover="3.2.0">
+  <project timestamp="1580386281695" name="All files">
     <metrics statements="6" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="4" elements="11" coveredelements="9" complexity="0" loc="6" ncloc="6" packages="1" files="1" classes="1"/>
     <file name="index.js" path="/Users/pedrofonseca/Documents/codematters/codematters-circleci/index.js">
       <metrics statements="6" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="4"/>

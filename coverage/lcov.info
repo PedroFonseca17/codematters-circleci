@@ -4,14 +4,14 @@ FN:1,sum
 FN:5,sub
 FN:9,multiply
 FN:13,divide
-FN:17,untested
+FN:17,test
 FNF:5
 FNH:4
 FNDA:1,sum
 FNDA:1,sub
 FNDA:1,multiply
 FNDA:1,divide
-FNDA:0,untested
+FNDA:0,test
 DA:2,1
 DA:6,1
 DA:10,1
