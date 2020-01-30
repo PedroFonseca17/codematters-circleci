@@ -3,6 +3,16 @@ name: Node.js CI
 on: [push]
 
 jobs:
+  files:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [ 12.x ]
+    steps:
+    - run: ls -la
+    - run: File system
+
   build:
 
     runs-on: ubuntu-latest
