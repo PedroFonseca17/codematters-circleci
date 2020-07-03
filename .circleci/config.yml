@@ -1,63 +1,63 @@
-# version: 2.1
-# orbs:
-#   codecov: codecov/codecov@1.0.2
-# jobs:
-#   Hello-World:
-#     docker:
-#       - image: alpine:3.7
-#     steps:
-#       - run:
-#           name: Hello World
-#           command: |
-#             echo 'Hello World!'
-#             echo 'This is the delivery pipeline'
-#   I-Have-Code:
-#     docker:
-#       - image: alpine:3.7
-#     steps:
-#       - checkout
-#       - run:
-#           name: Code Has Arrived
-#           command: |
-#             ls -al
-#             echo '^^^That should look familiar^^^'
-#   Run-With-Node:
-#     docker:
-#       - image: circleci/node:10-browsers
-#     steps:
-#       - checkout
-#       - run:
-#           name: install and run tests
-#           command: |
-#             yarn install && yarn test
-#       - codecov/upload:
-#           file: './coverage/clover.xml'
-#           token: a7a5df63-842c-4578-8977-57558e0ae2a3
-#   Now-Complete:
-#     docker:
-#       - image: alpine:3.7
-#     steps:
-#       - run:
-#           name: Approval Complete
-#           command: |
-#             echo 'Do work once the approval has completed'
+version: 2.1
+orbs:
+  codecov: codecov/codecov@1.0.2
+jobs:
+  Hello-World:
+    docker:
+      - image: alpine:3.7
+    steps:
+      - run:
+          name: Hello World
+          command: |
+            echo 'Hello World!'
+            echo 'This is the delivery pipeline'
+  I-Have-Code:
+    docker:
+      - image: alpine:3.7
+    steps:
+      - checkout
+      - run:
+          name: Code Has Arrived
+          command: |
+            ls -al
+            echo '^^^That should look familiar^^^'
+  Run-With-Node:
+    docker:
+      - image: circleci/node:10-browsers
+    steps:
+      - checkout
+      - run:
+          name: install and run tests
+          command: |
+            yarn install && yarn test
+      - codecov/upload:
+          file: './coverage/clover.xml'
+          token: a7a5df63-842c-4578-8977-57558e0ae2a3
+  Now-Complete:
+    docker:
+      - image: alpine:3.7
+    steps:
+      - run:
+          name: Approval Complete
+          command: |
+            echo 'Do work once the approval has completed'
 
-# workflows:
-#  version: 2
-#  Example_Workflow:
-#    jobs:
-#      - Hello-World
-#      - I-Have-Code:
-#          requires:
-#            - Hello-World
-#      - Run-With-Node:
-#          requires:
-#            - Hello-World
-#      - Hold-For-Approval:
-#          type: approval
-#          requires:
-#            - Run-With-Node
-#            - I-Have-Code
-#      - Now-Complete:
-#          requires:
-#            - Hold-For-Approval
+workflows:
+ version: 2
+ Example_Workflow:
+   jobs:
+     - Hello-World
+     - I-Have-Code:
+         requires:
+           - Hello-World
+     - Run-With-Node:
+         requires:
+           - Hello-World
+     - Hold-For-Approval:
+         type: approval
+         requires:
+           - Run-With-Node
+           - I-Have-Code
+     - Now-Complete:
+         requires:
+           - Hold-For-Approval
